@@ -1,0 +1,13 @@
+<div class="container fs-5 py-5">
+    <div class="row">
+        <div class="col-lg-6 col-sm-12 d-grid gap-3">
+            <input type="text" class="form-control rounded-0" [(ngModel)]="account_no" placeholder="Account.No">
+            <input type="text" class="form-control rounded-0" [(ngModel)]="id" placeholder="ID">
+            <input type="text" class="form-control rounded-0" [(ngModel)]="account_name" placeholder="Account.Name">
+            <input type="text" class="form-control rounded-0" [(ngModel)]="branch" placeholder="Branch">
+            <input type="text" class="form-control rounded-0" [(ngModel)]="mobile" placeholder="Mobile">
+            <input type="text" class="form-control rounded-0" [(ngModel)]="email" placeholder="Email">
+            <button class="btn btn-outline-light rounded-0" [disabled]="!account_no||!id||!account_name||!branch||!mobile||!email">Save</button>
+        </div>
+    </div>
+</div>

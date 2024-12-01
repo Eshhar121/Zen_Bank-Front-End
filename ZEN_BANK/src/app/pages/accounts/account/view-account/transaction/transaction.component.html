@@ -1,0 +1,7 @@
+<button type="button" class="btn btn-outline-light rounded-0 w-100 font-monospace">
+    <div class="row">
+        <div class="col-2 border-end">{{transaction.total}}</div>
+        <div class="col-4 border-end">{{transaction.date.slice(0,10)}}</div>
+        <div class="col">{{this.transaction.receiverAccNo==this.accNo?"Recived By - "+transaction.senderAccNo:"Sended To - "+transaction.receiverAccNo}}</div>
+    </div>
+</button>

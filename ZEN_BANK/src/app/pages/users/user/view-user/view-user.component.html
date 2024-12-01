@@ -1,0 +1,12 @@
+<div class="container fs-5 py-5">
+    <div class="row">
+        <div class="col-lg-6 col-sm-12 d-grid gap-3">
+            <input type="text" class="form-control rounded-0" [(ngModel)]="id" disabled placeholder="ID">
+            <input type="text" class="form-control rounded-0" [(ngModel)]="name" placeholder="Name">
+            <input type="text" class="form-control rounded-0" [(ngModel)]="address" placeholder="Address">
+            <input type="text" class="form-control rounded-0" [(ngModel)]="contact" placeholder="Contact">
+            <input type="text" class="form-control rounded-0" [(ngModel)]="email" placeholder="Email">
+            <button class="btn btn-outline-light rounded-0" [disabled]="ischanged()">Update</button>
+        </div>
+    </div>
+</div>

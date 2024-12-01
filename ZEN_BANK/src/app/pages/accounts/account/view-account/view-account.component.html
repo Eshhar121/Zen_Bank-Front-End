@@ -1,0 +1,18 @@
+<div class="container py-5">
+    <div class="row">
+        <div class="col-12 col-lg-6 col-sm-12 d-grid gap-3">
+            <input type="text" class="form-control rounded-0" [(ngModel)]="accountNo" disabled placeholder="Account.No">
+            <input type="text" class="form-control rounded-0" [(ngModel)]="id" placeholder="ID">
+            <input type="text" class="form-control rounded-0" [(ngModel)]="account_name" placeholder="Account.Name">
+            <input type="text" class="form-control rounded-0" [(ngModel)]="branch" placeholder="Branch">
+            <input type="text" class="form-control rounded-0" [(ngModel)]="mobile" placeholder="Mobile">
+            <input type="text" class="form-control rounded-0" [(ngModel)]="email" placeholder="Email">
+            <button class="btn btn-outline-light rounded-0" [disabled]="ischanged()">Update</button>
+        </div>
+        <div class="col-12 col-lg-6 col-sm-12">
+            <div *ngFor="let transaction of transactionList" class="container text-white d-grid gap-3 my-lg-0 my-3">
+                <app-transaction [transaction]="transaction" [accNo]="accountNo"></app-transaction>
+            </div>
+        </div>
+    </div>
+</div>
